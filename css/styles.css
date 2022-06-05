@@ -45,6 +45,32 @@ ul {
 }
 .list{
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-portfolio {
+    padding-top: 94px;
+}
+
+.section-footer {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.section-portfolio-cards {
+    padding-bottom: 94px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 /*---------------- HEADER------------------ */
@@ -122,12 +148,12 @@ letter-spacing: 0.02em;
 /*------------- HERO ----------------*/
 
 .hero{
-    background: #2F303A;
+background: #2F303A;
 display: flex;
 }
 
 .flex  {
-    padding: 200px 0;
+    padding: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,6 +171,8 @@ display: flex;
 }
 
 .hero-title{
+margin-right: auto;
+margin-left: auto;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -175,13 +203,18 @@ margin-top: var(--typical-margin);
 
 /* ---------------------BENEFITS-------------------------- */
 
+.flex-benefits  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .benefits-list {
-    margin-top: 94px;
     display: flex;
 }
 
 .benefits-item:not(:last-child){
-    margin-left: var(--typical-margin);
+    margin-right: var(--typical-margin);
     
 }
 
@@ -197,6 +230,11 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--main_color);
 }
+
+.benefits-sledding {
+margin-bottom: 10px;
+}
+
 .benefits-sledding-item{
 font-size: 14px;
 line-height: 1.71;
@@ -213,9 +251,8 @@ color: var(--contacts-color);
     flex-direction: column;
 }
 
-.about .container{
+.container{
 display: flex;
-margin-top: 94px;
 }
 
 .about-main-title{
@@ -244,11 +281,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+background: #F5F4FA;
 }
 
 .team{
 background-color: #F5F4FA;
-margin-top: 94px;
 }
 
 .team-main-title{
@@ -259,12 +296,10 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--main_color);
 margin-bottom: var(--header-margin);
-padding-top: 94px;
 }
 
 .team-list {
     display: flex;
-    margin-bottom: 94px;
 }
 
 .team-item:not(:last-child){
@@ -319,12 +354,7 @@ color: var(--contacts-color);
 }
 
 .logo-footer{
-    padding-top: 60px;
     margin-bottom: 20px;
-}
-
-.footer-list{
-    padding-bottom: 60px;
 }
 
 .footer-address{
@@ -384,12 +414,14 @@ margin-right: 93px;
 }
 /* ---------------------------Портфолио----------------------------------- */
 
-.main-item {
-    border: 1px solid #EEEEEE;
-} 
-
 .main-item-btn:not(:last-child) {
 margin-right: 8px;
+}
+
+.cards-text {
+    border: 1px solid #eeeeee;
+    border-top: none;
+    padding: 24px 20px;
 }
 
 .main-list{
@@ -398,31 +430,23 @@ margin-right: 8px;
     margin: 0;
     justify-content: center;
     flex-wrap: wrap;
+    margin: -15px;
 }
 
 .main-item:nth-child(-n + 6) {
 margin-bottom: var(--typical-margin);
 }
 
-.cards {
-    margin-bottom: 94px;
-}
-
 .main-item {
 margin-right: 15px;
-margin-left: 12px;
+margin-left: 15px;
+margin: 15px;
 } 
-
-.main-item-text {
-    margin-top: 20px;
-    padding-left: 24px;
-}
 
 
 .main-item-subtext {
     margin-top: 4px;
-    padding-left: 24px;
-    padding-bottom: 20px;
+
 }
 
 .main-btn {
@@ -449,7 +473,6 @@ cursor: pointer;
 }
 
 .main-list-btn{
-margin-top: 94px;
 margin-bottom: var(--header-margin);
 }
 .main-btn:hover{
