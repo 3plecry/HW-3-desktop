@@ -149,20 +149,12 @@ letter-spacing: 0.02em;
 
 /*------------- HERO ----------------*/
 
-.hero{
-background: #2F303A;
-display: flex;
+.hero {
+	background-color: #2f303a;
+	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
-
-.flex  {
-    padding: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #2F303A;
-}
-
 .container{
     display: flex;
     }
@@ -173,6 +165,7 @@ display: flex;
 }
 
 .hero-title{
+margin-top: 0;
 margin-right: auto;
 margin-left: auto;
 font-weight: 900;
@@ -181,10 +174,11 @@ line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--header-title-color);
+margin-bottom: var(--typical-margin);
 }
 
 .hero-title{
-    max-width: 650px;
+    max-width: 700px;
 }
 
 .hero-btn {
@@ -193,14 +187,13 @@ background-color: var(--accent-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border: 0px;
 border-radius: 4px;
-width: 200px;
+min-width: 200px;
 height: 50px;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
 color: var(--main-btn-color);
-margin-top: var(--typical-margin);
 }
 
 /* ---------------------BENEFITS-------------------------- */
@@ -424,7 +417,7 @@ margin-right: 8px;
 .cards-text {
     border: 1px solid #eeeeee;
     border-top: none;
-    padding: 24px 20px;
+    padding: 20px 24px;
 }
 
 .main-list{
